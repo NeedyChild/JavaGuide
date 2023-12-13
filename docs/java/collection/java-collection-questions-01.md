@@ -255,7 +255,7 @@ public interface RandomAccess {
 
 ## Set
 
-### Comparable 和 Comparator 的区别
+### Comparable 和 Comparator 的区别（此题可参考gpt回答）
 
 `Comparable` 接口和 `Comparator` 接口都是 Java 中用于排序的接口，它们在实现类对象之间比较大小、排序等方面发挥了重要作用：
 
