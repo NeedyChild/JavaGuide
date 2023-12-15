@@ -586,6 +586,16 @@ public FutureTask(Runnable runnable, V result) {
 
 `FutureTask`相当于对`Callable` 进行了封装，管理着任务执行的情况，存储了 `Callable` 的 `call` 方法的任务执行结果。
 
+GPT: 
+Callable
+Callable是一个功能性接口，用于表示那些应该在另一个线程中运行的任务。它类似于Runnable接口，但有两个主要区别：
+
+有返回值：Callable的call()方法可以返回结果。而Runnable的run()方法没有返回值。
+可以抛出异常：Callable的call()方法允许抛出异常，而Runnable的run()方法不能抛出受检异常（Checked Exception）。
+
+关系
+当你提交一个Callable任务到ExecutorService时，你会得到一个Future对象。这个对象代表了Callable任务的未来结果。简而言之，Callable定义了任务，Future提供了检查任务状态和获取任务结果的方式。
+
 ### CompletableFuture 类有什么用？
 
 `Future` 在实际使用过程中存在一些局限性比如不支持异步任务的编排组合、获取计算结果的 `get()` 方法为阻塞调用。
