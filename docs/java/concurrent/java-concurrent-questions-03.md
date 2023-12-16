@@ -551,6 +551,7 @@ public interface Future<V> {
 简单理解就是：我有一个任务，提交给了 `Future` 来处理。任务执行期间我自己可以去做任何想做的事情。并且，在这期间我还可以取消任务以及获取任务的执行状态。一段时间之后，我就可以 `Future` 那里直接取出任务执行结果。
 
 GPT：
+
 在Java中，`Future`类是一个接口，它代表了一个异步计算的结果。当你启动一个异步操作时，你会得到一个`Future`对象，通过这个对象你可以在未来的某个时刻获取操作的结果。`Future`提供了一种检查异步计算是否完成的方式，以及获取计算结果的方式。它是并发编程中非常重要的一个概念。
 
 ### Callable 和 Future 有什么关系？
@@ -587,13 +588,15 @@ public FutureTask(Runnable runnable, V result) {
 `FutureTask`相当于对`Callable` 进行了封装，管理着任务执行的情况，存储了 `Callable` 的 `call` 方法的任务执行结果。
 
 GPT: 
+
 Callable
 Callable是一个功能性接口，用于表示那些应该在另一个线程中运行的任务。它类似于Runnable接口，但有两个主要区别：
 
 有返回值：Callable的call()方法可以返回结果。而Runnable的run()方法没有返回值。
 可以抛出异常：Callable的call()方法允许抛出异常，而Runnable的run()方法不能抛出受检异常（Checked Exception）。
 
-关系
+关系：
+
 当你提交一个Callable任务到ExecutorService时，你会得到一个Future对象。这个对象代表了Callable任务的未来结果。简而言之，Callable定义了任务，Future提供了检查任务状态和获取任务结果的方式。
 
 ### CompletableFuture 类有什么用？
