@@ -163,6 +163,10 @@ Java 堆是垃圾收集器管理的主要区域，因此也被称作 **GC 堆（
 
 **方法区和永久代以及元空间是什么关系呢？** 方法区和永久代以及元空间的关系很像 Java 中接口和类的关系，类实现了接口，这里的类就可以看作是永久代和元空间，接口可以看作是方法区，也就是说永久代以及元空间是 HotSpot 虚拟机对虚拟机规范中方法区的两种实现方式。并且，永久代是 JDK 1.8 之前的方法区实现，JDK 1.8 及以后方法区的实现变成了元空间。
 
+PS：知乎收藏在“转码”文件夹下的一篇文章中的开头总结：
+
+方法区实在虚拟机规范里面被定义的，不同的虚拟机对这个定义的实现不同，在HotSpot 虚拟机中在 jdk1.7 版本之前的方法区实现叫永久代（PermGen space），jdk1.8 之后叫做元空间（Metaspace）。如 JRockit（Oracle）、J9（IBM） 虚拟机有方法区 ，但是就没有永久代。所以我们以下讨论的都是基于 HotSpot 虚拟机：
+
 ![HotSpot 虚拟机方法区的两种实现](https://oss.javaguide.cn/github/javaguide/java/jvm/method-area-implementation.png)
 
 **为什么要将永久代 (PermGen) 替换为元空间 (MetaSpace) 呢?**
