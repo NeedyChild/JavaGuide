@@ -165,7 +165,7 @@ Java 堆是垃圾收集器管理的主要区域，因此也被称作 **GC 堆（
 
 PS：知乎收藏在“转码”文件夹下的一篇文章中的开头总结：
 
-方法区实在虚拟机规范里面被定义的，不同的虚拟机对这个定义的实现不同，在HotSpot 虚拟机中在 jdk1.7 版本之前的方法区实现叫永久代（PermGen space），jdk1.8 之后叫做元空间（Metaspace）。如 JRockit（Oracle）、J9（IBM） 虚拟机有方法区 ，但是就没有永久代。所以我们以下讨论的都是基于 HotSpot 虚拟机：
+方法区实在虚拟机规范里面被定义的，不同的虚拟机对这个定义的实现不同，在HotSpot 虚拟机中在 jdk1.7 版本之前的方法区实现叫永久代（PermGen space），jdk1.8 之后叫做元空间（Metaspace）。如 JRockit（Oracle）、J9（IBM） 虚拟机有方法区 ，但是就没有永久代。
 
 ![HotSpot 虚拟机方法区的两种实现](https://oss.javaguide.cn/github/javaguide/java/jvm/method-area-implementation.png)
 
