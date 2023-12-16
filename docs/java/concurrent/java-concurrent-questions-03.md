@@ -680,7 +680,7 @@ protected final boolean compareAndSetState(int expect, int update) {
 
 再以 `CountDownLatch` 以例，任务分为 N 个子线程去执行，`state` 也初始化为 N（注意 N 要与线程个数一致）。这 N 个子线程是并行执行的，每个子线程执行完后`countDown()` 一次，state 会 CAS(Compare and Swap) 减 1。等到所有子线程都执行完后(即 `state=0` )，会 `unpark()` 主调用线程，然后主调用线程就会从 `await()` 函数返回，继续后余动作。
 
-### Semaphore 有什么用？
+### Semaphore 有什么用？（Semaphore和CountDownLatch可以结合收藏在CS收藏夹下的B站相应视频来理解）
 
 `synchronized` 和 `ReentrantLock` 都是一次只允许一个线程访问某个资源，而`Semaphore`(信号量)可以用来控制同时访问特定资源的线程数量。
 
