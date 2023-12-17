@@ -31,7 +31,7 @@ Java 的自动内存管理主要是针对对象内存的回收和对象内存的
 
 Java 堆是垃圾收集器管理的主要区域，因此也被称作 **GC 堆（Garbage Collected Heap）**。
 
-PS: GC英文全称为Garbage Collection,即垃圾回收。
+PS: GC英文全称为Garbage Collection，即垃圾回收。
 
 从垃圾回收的角度来说，由于现在收集器基本都采用分代垃圾收集算法，所以 Java 堆被划分为了几个不同的区域，这样我们就可以根据各个区域的特点选择合适的垃圾收集算法。
 
