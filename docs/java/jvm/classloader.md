@@ -91,8 +91,11 @@ JVM 中内置了三个重要的 `ClassLoader`：
 3. **`AppClassLoader`(应用程序类加载器)**：面向我们用户的加载器，负责加载当前应用 classpath 下的所有 jar 包和类。
 
 PS: 也可以按GPT总结的来记：
+
 引导类加载器（Bootstrap Class Loader）：它加载Java的核心库，是用原生代码实现的，并不继承自java.lang.ClassLoader。（这句话和这个类加载器的翻译与我收藏的阿里云开发的一篇文章中所写的完全一样，应该是对的）
+
 扩展类加载器（Extension Class Loader）：它用于加载JRE的扩展目录（jre/lib/ext或java.ext.dirs系统属性指定的目录）中的JAR包和类。
+
 应用程序类加载器（Application Class Loader）：也称为系统类加载器，它根据应用的类路径（ClassPath）来加载Java应用程序类。
 
 > 🌈 拓展一下：
