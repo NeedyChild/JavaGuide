@@ -7,7 +7,7 @@
 
 欢迎阅读我对 Java 8 的介绍。本教程将逐步指导您完成所有新语言功能。 在简短的代码示例的基础上，您将学习如何使用默认接口方法，lambda 表达式，方法引用和可重复注释。 在本文的最后，您将熟悉最新的 API 更改，如流，函数式接口(Functional Interfaces)，Map 类的扩展和新的 Date API。 没有大段枯燥的文字，只有一堆注释的代码片段。
 
-## 接口的默认方法(Default Methods for Interfaces)
+## 接口的默认方法(Default Methods for Interfaces)（记）
 
 Java 8 使我们能够通过使用 `default` 关键字向接口添加非抽象方法实现。 此功能也称为[虚拟扩展方法](http://stackoverflow.com/a/24102730)。
 
@@ -51,7 +51,7 @@ formula 是作为匿名对象实现的。该代码非常容易理解，6 行代�
 
 **译者注：** 不管是抽象类还是接口，都可以通过匿名内部类的方式访问。不能通过抽象类或者接口直接创建对象。对于上面通过匿名内部类方式访问接口，我们可以这样理解：一个内部类实现了接口里的抽象方法并且返回一个内部类对象，之后我们让接口的引用来指向这个对象。
 
-## Lambda 表达式(Lambda expressions)
+## Lambda 表达式(Lambda expressions)（记）
 
 首先看看在老版本的 Java 中是如何排列字符串的：
 
@@ -90,7 +90,7 @@ names.sort((a, b) -> b.compareTo(a));
 
 List 类本身就有一个 `sort` 方法。并且 Java 编译器可以自动推导出参数类型，所以你可以不用再写一次类型。接下来我们看看 lambda 表达式还有什么其他用法。
 
-## 函数式接口(Functional Interfaces)
+## 函数式接口(Functional Interfaces)（记）
 
 **译者注：** 原文对这部分解释不太清楚，故做了修改！
 
@@ -396,7 +396,7 @@ optional.ifPresent((s) -> System.out.println(s.charAt(0)));     // "b"
 
 推荐阅读：[[Java8]如何正确使用 Optional](https://blog.kaaass.net/archives/764)
 
-## Streams(流)
+## Stream接口（记，只需记住Java8引入了Stream接口即可）
 
 `java.util.Stream` 表示能应用在一组元素上一次执行的操作序列。Stream 操作分为中间操作或者最终操作两种，最终操作返回一特定类型的计算结果，而中间操作返回 Stream 本身，这样你就可以将多个操作依次串起来。Stream 的创建需要指定一个数据源，比如`java.util.Collection` 的子类，List 或者 Set， Map 不支持。Stream 的操作可以串行执行或者并行执行。
 
@@ -660,7 +660,7 @@ map.get(9);             // val9concat
 
 Merge 做的事情是如果键名不存在则插入，否则对原键对应的值做合并操作并重新插入到 map 中。
 
-## Date API(日期相关 API)
+## Date API(日期相关 API)（简单记一下）
 
 Java 8 在 `java.time` 包下包含一个全新的日期和时间 API。新的 Date API 与 Joda-Time 库相似，但它们不一样。以下示例涵盖了此新 API 的最重要部分。译者对这部分内容参考相关书籍做了大部分修改。
 
