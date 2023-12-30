@@ -34,7 +34,7 @@
 - [贡献指南](https://javaguide.cn/javaguide/contribution-guideline.html)
 - [常见问题](https://javaguide.cn/javaguide/faq.html)
 
-## Java
+## Java（看！）
 
 ### 基础
 
@@ -131,7 +131,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 ## 计算机基础
 
-### 操作系统
+### 操作系统（看！）
 
 - [操作系统常见知识点&面试题总结(上)](./docs/cs-basics/operating-system/operating-system-basic-questions-01.md)
 - [操作系统常见知识点&面试题总结(下)](./docs/cs-basics/operating-system/operating-system-basic-questions-02.md)
@@ -139,7 +139,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
   - [后端程序员必备的 Linux 基础知识总结](./docs/cs-basics/operating-system/linux-intro.md)
   - [Shell 编程基础知识总结](./docs/cs-basics/operating-system/shell-intro.md)
 
-### 网络
+### 网络（看！）
 
 **知识点/面试题总结**：
 
@@ -192,7 +192,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 ## 数据库
 
-### 基础
+### 基础（看数据库基础知识部分，其他的了解即可）
 
 - [数据库基础知识总结](./docs/database/basis.md)
 - [NoSQL 基础知识总结](./docs/database/nosql.md)
@@ -201,7 +201,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
   - [SQL 语法基础知识总结](./docs/database/sql/sql-syntax-summary.md)
   - [SQL 常见面试题总结](./docs/database/sql/sql-questions-01.md)
 
-### MySQL
+### MySQL（看！）
 
 **知识点/面试题总结：**
 
@@ -221,7 +221,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 - [MySQL 时间类型数据存储建议](./docs/database/mysql/some-thoughts-on-database-storage-time.md)
 - [MySQL 隐式转换造成索引失效](./docs/database/mysql/index-invalidation-caused-by-implicit-conversion.md)
 
-### Redis
+### Redis（看！）
 
 **知识点/面试题总结** : (必看:+1: )：
 
@@ -251,7 +251,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 ## 开发工具
 
-### Maven
+### Maven（了解）
 
 - [Maven 核心概念总结](./docs/tools/maven/maven-core-concepts.md)
 - [Maven 最佳实践](./docs/tools/maven/maven-best-practices.md)
@@ -285,7 +285,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 ### 常用框架
 
-#### Spring/SpringBoot (必看 :+1:)
+#### Spring/SpringBoot (必看 :+1:) （看！）
 
 **知识点/面试题总结** :
 
