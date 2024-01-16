@@ -120,7 +120,7 @@ ORDER BY cust_name DESC
 
 编写 SQL 语句，从 `Orders` 表中检索顾客 ID（`cust_id`）和订单号（`order_num`），并先按顾客 ID 对结果进行排序，再按订单日期倒序排列。
 
-答案(ChatGPT认可了这个答案)：
+答案(ChatGPT认可了原作者这个答案)：
 
 ```sql
 # 根据列名排序
