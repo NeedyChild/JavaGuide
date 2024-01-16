@@ -120,7 +120,7 @@ ORDER BY cust_name DESC
 
 编写 SQL 语句，从 `Orders` 表中检索顾客 ID（`cust_id`）和订单号（`order_num`），并先按顾客 ID 对结果进行排序，再按订单日期倒序排列。
 
-答案：
+答案(ChatGPT认可了这个答案)：
 
 ```sql
 # 根据列名排序
@@ -130,6 +130,12 @@ FROM Orders
 ORDER BY cust_id,order_date DESC
 ```
 
+PS(ChatGPT): 如果要先按顾客id降序，再按订单日期降序则需要这么写：
+```
+SELECT cust_id, order_num
+FROM Orders
+ORDER BY cust_id DESC, order_date DESC
+```
 知识点：`order by` 对多列排序的时候，先排序的列放前面，后排序的列放后面。并且，不同的列可以有不同的排序规则。
 
 ### 按照数量和价格排序
