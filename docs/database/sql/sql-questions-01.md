@@ -337,7 +337,7 @@ WHERE vend_country = 'USA' AND vend_state = 'CA'
 | BR02    | a2        | 19       |
 | BR017   | a7        | 5        |
 
-【问题】编写 SQL 语句，查找所有订购了数量至少 100 个的 `BR01`、`BR02` 或 `BR03` 的订单。你需要返回 `OrderItems` 表的订单号（`order_num`）、产品 ID（`prod_id`）和数量（`quantity`），并按产品 ID 和数量进行过滤。
+【问题】编写 SQL 语句，查找所有订购了数量至少 100 个的 `BR01`、`BR02` 或 `BR03` 的订单。你需要返回 `OrderItems` 表的订单号（`order_num`）、产品 ID（`prod_id`）和数量（`quantity`），并按产品 ID 和数量进行过滤。（此题问的是bro1 >= 100或bro2 >= 100或bro3 >= 100）
 
 答案：
 
@@ -345,6 +345,15 @@ WHERE vend_country = 'USA' AND vend_state = 'CA'
 SELECT order_num, prod_id, quantity
 FROM OrderItems
 WHERE prod_id IN ('BR01', 'BR02', 'BR03') AND quantity >= 100
+```
+
+要是想查询的是bro1 + bro2 + bro3 >= 100的话，则答案为：
+```sql
+SELECT order_num
+FROM OrderItems
+WHERE prod_id IN ('BRO1', 'BRO2', 'BRO3')
+GROUP BY order_num
+HAVING SUM(quantity) >= 100;
 ```
 
 ### 返回所有价格在 3 美元到 6 美元之间的产品的名称和价格
