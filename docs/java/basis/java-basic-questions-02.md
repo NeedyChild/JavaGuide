@@ -190,7 +190,7 @@ public class Student {
 
 #### 多态
 
-多态，顾名思义，表示一个对象具有多种的状态，具体表现为父类的引用指向子类的实例。
+多态，顾名思义，表示一个对象具有多种的状态，具体表现为父类的引用指向子类的实例。（PS：比如Animal是父类，Dog、Cat是子类，那么Animal myDog = new Dog(); Animal hisCat = new Cat();就是父类引用（myDog, hisCat)指向子类对象(新创建的的Dog类、Cat类对象）
 
 **多态的特点:**
 
