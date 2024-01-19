@@ -582,7 +582,7 @@ for (String s : strs) {
 }
 ```
 
-不过，**JVM 其实并不能识别语法糖，Java 语法糖要想被正确执行，需要先通过编译器进行解糖**，也就是在程序编译阶段将其转换成 JVM 认识的基本语法。这也侧面说明，Java 中真正支持语法糖的是 Java 编译器而不是 JVM。如果你去看`com.sun.tools.javac.main.JavaCompiler`的源码，你会发现在`compile()`中有一个步骤就是调用`desugar()`，这个方法就是负责解语法糖的实现的。
+不过，**JVM 其实并不能识别语法糖，Java 语法糖要想被正确执行，需要先通过编译器进行解糖**，也就是在程序编译阶段将其转换成 JVM 认识的基本语法。这也侧面说明，**Java 中真正支持语法糖的是 Java 编译器而不是 JVM**。如果你去看`com.sun.tools.javac.main.JavaCompiler`的源码，你会发现在`compile()`中有一个步骤就是调用`desugar()`，这个方法就是负责解语法糖的实现的。
 
 ### Java 中有哪些常见的语法糖？
 
