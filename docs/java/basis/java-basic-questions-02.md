@@ -207,7 +207,7 @@ public class Student {
 - 都可以包含抽象方法。
 - 都可以有默认实现的方法（Java 8 可以用 `default` 关键字在接口中定义默认方法）。
 
-接口和抽象类能否包含PS(ChatGPT)：
+PS：接口和抽象类能否包含主函数和和构造方法(ChatGPT)：
 
 主函数（main方法）
 接口：
