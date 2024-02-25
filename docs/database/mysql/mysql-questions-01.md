@@ -828,9 +828,9 @@ mysql> EXPLAIN SELECT `score`,`name` FROM `cus_order` ORDER BY `score` DESC;
 
 篇幅问题，我这里只是简单介绍了一下 MySQL 执行计划，详细介绍请看：[SQL 的执行计划](./mysql-query-execution-plan.md)这篇文章。
 
-### 读写分离和分库分表了解吗？
+### 读写分离，分库分表和主从复制了解吗？
 
-读写分离和分库分表相关的问题比较多，于是，我单独写了一篇文章来介绍：[读写分离和分库分表详解](../../high-performance/read-and-write-separation-and-library-subtable.md)。
+读写分离，分库分表和主从复制相关的问题比较多，于是，我单独写了一篇文章来介绍：[读写分离和分库分表详解](../../high-performance/read-and-write-separation-and-library-subtable.md)。
 
 ## MySQL 学习资料推荐
 
