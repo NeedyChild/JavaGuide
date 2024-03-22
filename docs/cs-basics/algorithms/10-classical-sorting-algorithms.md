@@ -401,8 +401,8 @@ public static void quickSort(int[] array, int low, int high) {
 ### 算法分析
 
 - **稳定性**：不稳定
-- **时间复杂度**：最佳：$O(nlogn)$， 最差：$O(nlogn)$，平均：$O(nlogn)$
-- **空间复杂度**：$O(logn)$
+~~- **时间复杂度**：最佳：$O(nlogn)$， 最差：$O(nlogn)$，平均：$O(nlogn)$~~
+~~- **空间复杂度**：$O(logn)$~~
 
 PS：普通的快速排序的时间复杂度：
 - 最好情况时间复杂度：O(nlogn)，当划分操作每次都能将数据列表平均分成两部分时，快速排序算法的效率最高。
