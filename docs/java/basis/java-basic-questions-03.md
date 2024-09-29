@@ -229,6 +229,8 @@ catch (IOException e) {
 
 编译器可以对泛型参数进行检测，并且通过泛型参数可以指定传入的对象类型。比如 `ArrayList<Person> persons = new ArrayList<Person>()` 这行代码就指明了该 `ArrayList` 对象只能传入 `Person` 对象（这里的传入是说后面对这个新建的ArrayList对象进行add等操作时，而不是说构造器需要传入对象，写个构造器只是说明这个对象被新建了，是ArrayList<Person>类型），如果传入其他类型的对象就会报错。
 
+**ChatGPT：** Java泛型（Generics）是Java语言中的一种特性，它允许在定义类、接口和方法时使用类型参数（Type Parameters）。通过泛型，可以将类型的定义推迟到对象创建或方法调用时再指定，从而实现代码的类型安全和可复用性。
+
 ```java
 ArrayList<E> extends AbstractList<E>
 ```
