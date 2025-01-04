@@ -185,7 +185,7 @@ static class Entry extends WeakReference<ThreadLocal<?>> {
 >
 > 弱引用可以和一个引用队列（ReferenceQueue）联合使用，如果弱引用所引用的对象被垃圾回收，Java 虚拟机就会把这个弱引用加入到与之关联的引用队列中。
 
-## 线程池
+## 线程池（线程池的参数、意义以及创建方法见ChatGPT的Java八股对话内GPT的回答即可）
 
 ### 什么是线程池?
 
